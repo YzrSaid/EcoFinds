@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFinds</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="profile-header">
+            <div class="logo-search">
+                <a href="browsing-page.html"><img src="images/ecofinds_logo.png" alt="logo" class="logo-no-title"></a>
+                <div class="searchbar-container">
+                    <input type="text" placeholder="Search" class="searchbar">
+                    <button class="search-icon">
+                        <img src="images/search.png" alt="Search">
+                    </button>
+                </div>
+            </div>
+            <div class="user-options">
+                <div class="icons">
+                    <button type="button" id="like-icon-button" onclick="location.href='user-likes.html';">
+                        <img src="images/heart.png" alt="notif-icon">
+                    </button>
+                    <button type="button" id="notif-icon-button" onclick="location.href='user-notifications.html';">
+                        <img src="images/notif_icon.png" alt="notif-icon">
+                        <span id="notif-icon-button-badge">2</span>
+                    </button>
+                    <a href="profile-personal-account.html"><img class="user-profile" src="images/boss.jpg"></a>
+                </div>
+            </div>
+        </header>
+        <nav class="inner-navbar">
+            <div class="menu-categories">
+                <li><a href="#" style="font-weight: bold;"><img src="images/menu-icon.png" alt="">Browse Categories</a>
+                </li>
+            </div>
+            <ul class="inner-navbar-links">
+                <li><a href="user-home.html">Home</a></li>
+                <li><a href="user-about.html">About</a></li>
+                <li><a href="user-faqs.html">FAQs</a></li>
+                <li><a href="user-contact.html">Contact Us</a></li>
+            </ul>
+            <div id="user-filter-search">
+                <li><a href="#"> <img src="images/funnel-green.png" alt="">Search Filter</a></li>
+            </div>
+            <div class="post-item">
+                <li><a href="post-item.html"><img src="images/PostanItem.png" alt=""></a></li>
+            </div>
+        </nav>
+        <div class="view-item-container">
+            <div class="view-item-inner">
+                <!-- First column: Item details -->
+                <div class="main-info-column">
+                    <div class="item-info">
+                        <h1 id="item-name">Naykie Shoes</h1>
+                        <img id="like-icon" src="images/like-unfill-icon.png" alt="like-icon">
+                    </div>
+                    <div class="item-info">
+                        <p id="item-location"><span><img id="location-icon" src="images/location-pin-gray.svg"
+                                    alt=""></span>Sinunuc, Zamboanga City</p>
+                        <p id="item-tag">Tag: Shoes</p>
+                    </div>
+                    <div class="item-info">
+                        <h4>Condition</h4>
+                        <p id="item-condition">Used-Fair</p>
+                    </div>
+                    <div class="item-info">
+                        <h4>Quantity</h4>
+                        <p id="item-quantity">1 (pcs)</p>
+                    </div>
+                    <div class="item-description">
+                        <h4>Description</h4>
+                        <textarea name="item-description" id="item-description"
+                            readonly>Kunin niyo na 'to or else itatapon ko to.</textarea>
+                    </div>
+                    <div class="item-contact-information">
+                        <h4>Contact Information</h4>
+                        <p>Posted by: <span id="user-name">Manny Pacquiao</span></p>
+                        <p>Email: <span id="user-email">manny_manymoney@gmail.com</h6></span></p>
+                        <p>Contact Number: <span id="user-phone-number">+63 935 1234 561</span></p>
+                    </div>
+                </div>
+
+                <!-- Second column: Photo upload, contact info, and submit button -->
+                <div class="secondary-info-column">
+                    <div class="image-gallery">
+                        <!-- Main Image Display -->
+                        <div class="main-image">
+                            <img id="displayed-image" src="images/sofa.jpg" alt="Item Image">
+                        </div>
+
+                        <!-- Image Thumbnails and Navigation -->
+                        <div class="thumbnail-row">
+                            <button id="prev-button">&#9664;</button>
+                            <div class="thumbnails">
+                                <img src="images/sofa.jpg" class="thumbnail" alt="Thumbnail 1"
+                                    onclick="changeImage('images/sofa.jpg')">
+                                <img src="images/sofa_2.jpg" class="thumbnail" alt="Thumbnail 2"
+                                    onclick="changeImage('images/sofa_2.jpg')">
+                                <img src="images/boss.jpg" class="thumbnail" alt="Thumbnail 3"
+                                    onclick="changeImage('images/boss.jpg')">
+                                <img src="images/sofa_2.jpg" class="thumbnail" alt="Thumbnail 4"
+                                    onclick="changeImage('images/sofa_2.jpg')">
+                                <img src="images/sample1.jpg" class="thumbnail" alt="Thumbnail 4"
+                                    onclick="changeImage('images/sample1.jpg')">
+                                <img src="images/sample2.png" class="thumbnail" alt="Thumbnail 4"
+                                    onclick="changeImage('images/sample2.png')">
+                                <img src="images/sample3.jpg" class="thumbnail" alt="Thumbnail 4"
+                                    onclick="changeImage('images/sample3.jpg')">
+                                <img src="images/sample4.jpg" class="thumbnail" alt="Thumbnail 4"
+                                    onclick="changeImage('images/sample4.jpg')">
+                                <img src="images/sample5.jpg" class="thumbnail" alt="Thumbnail 4"
+                                    onclick="changeImage('images/sample5.jpg')">
+                            </div>
+                            <button id="next-button">&#9654;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; Copyright All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

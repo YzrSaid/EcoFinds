@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFinds</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="profile-header">
+            <div class="logo-search">
+                <a href="ngo-browsing-page.html"><img src="images/ecofinds_logo.png" alt="logo" class="logo-no-title"></a>
+                <div class="searchbar-container">
+                    <input type="text" placeholder="Search" class="searchbar">
+                    <button class="search-icon">
+                        <img src="images/search.png" alt="Search">
+                    </button>
+                </div>
+            </div>
+            <div class="user-options">
+                <div class="icons">
+                    <button type="button" id="like-icon-button" onclick="location.href='ngo-likes.html';">
+                        <img src="images/heart.png" alt="notif-icon">
+                    </button>
+                    <button type="button" id="notif-icon-button" onclick="location.href='ngo-notifications.html';">
+                        <img src="images/notif_icon.png" alt="notif-icon">
+                        <span id="notif-icon-button-badge">2</span>
+                    </button>
+                    <button type="button" id="ngo-icon-button" onclick="location.href='profile-ngo-account.html';">
+                        <img class="user-profile" src="images/boss.jpg">
+                        <span id="ngo-icon-button-badge">NGO Partner</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <nav class="inner-navbar">
+            <div class="menu-categories">
+                <li><a href="#" style="font-weight: bold;"><img src="images/menu-icon.png" alt="">Browse Categories</a>
+                </li>
+            </div>
+            <ul class="inner-navbar-links">
+                <li><a href="ngo-home.html">Home</a></li>
+                <li><a href="ngo-about.html">About</a></li>
+                <li><a href="ngo-faqs.html">FAQs</a></li>
+                <li><a href="ngo-contact.html">Contact Us</a></li>
+            </ul>
+            <div id="ngo-filter-search">
+                <li><a href="#"> <img src="images/funnel-green.png" alt="">Search Filter</a></li>
+            </div>
+        </nav>
+        <section class="hero">
+            <img src="images/ecoFinds-bg.jpg" alt="EcoFinds-bg" class="hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Where Waste Finds Its<br>New <span>Worth</span></h1>
+            </div>
+        </section>
+        <section class="faq-section">
+            <h2>Frequently Asked <span>Questions</span></h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What is EcoFinds?
+                        <img class="accordion-icon-down" src="images/accordion-icon-down.png" alt="down-arrow-icon">
+                    </button>
+                    <div class="accordion-content">
+                        <p>EcoFinds is a platform where people can post their unused or unwanted items for others to claim
+                            for free. It's a way to reduce waste and help the community.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Who Can Post Items?
+                        <img class="accordion-icon-down" src="images/accordion-icon-down.png" alt="down-arrow-icon">
+                    </button>
+                    <div class="accordion-content">
+                        <p>Anyone with an account on the platform can post items they no longer need.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">What Kind of Items Can I Post?
+                        <img class="accordion-icon-down" src="images/accordion-icon-down.png" alt="down-arrow-icon">
+                    </button>
+                    <div class="accordion-content">
+                        <p>You can post items that are still usable and materials or items that can be recycled. Avoid
+                            posting hazardous materials or broken items.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <button class="accordion-header">How Do NGOs Get Priority Access To Items?
+                        <img class="accordion-icon-down" src="images/accordion-icon-down.png" alt="down-arrow-icon">
+                    </button>
+                    <div class="accordion-content">
+                        <p> When NGOs sign up and verify their organization, they are notified first when new items that
+                            match their needs are posted.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <button class="accordion-header">What Happens If my Item Isn't Claimed Within 3 Months?
+                        <img class="accordion-icon-down" src="images/accordion-icon-down.png" alt="down-arrow-icon">
+                    </button>
+                    <div class="accordion-content">
+                        <p> If your item is not claimed within 3 months, we will send you a notification suggesting nearby
+                            donation centers or recycling facilities.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="accordion-item">
+                    <button class="accordion-header">How Do I Get An Item?
+                        <img class="accordion-icon-down" src="images/accordion-icon-down.png" alt="down-arrow-icon">
+                    </button>
+                    <div class="accordion-content">
+                        <p>NGOs can register on the platform to receive notifications about items they may need.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Do Items Undergo Validation Before Being Posted?
+                        <img class="accordion-icon-down" src="images/accordion-icon-down.png" alt="down-arrow-icon">
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes. When you post an item, it will first undergo a validation process where we assess whether
+                            the item is still reusable or recyclable. Once validated, the item will be posted and available
+                            to others.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Is It Free To Use The Platform?
+                        <img class="accordion-icon-down" src="images/accordion-icon-down.png" alt="down-arrow-icon">
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes, our platform is completely free to use. You can post items and claim items without any
+                            charges.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; Copyright All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

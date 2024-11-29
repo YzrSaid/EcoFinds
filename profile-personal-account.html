@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>EcoFinds</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="profile-header">
+            <div class="logo-search">
+                <a href="browsing-page.html"><img src="images/ecofinds_logo.png" alt="logo" class="logo-no-title"></a>
+                <div class="searchbar-container">
+                    <input type="text" placeholder="Search" class="searchbar">
+                    <button class="search-icon">
+                        <img src="images/search.png" alt="Search">
+                    </button>
+                </div>
+            </div>
+            <div class="user-options">
+                <div class="icons">
+                    <button type="button" id="like-icon-button" onclick="location.href='ngo-likes.html';">
+                        <img src="images/heart.png" alt="notif-icon">
+                    </button>
+                    <button type="button" id="notif-icon-button" onclick="location.href='notifications.html';">
+                        <img src="images/notif_icon.png" alt="notif-icon">
+                        <span id="notif-icon-button-badge">2</span>
+                    </button>
+                    <a href="profile-personal-account.html"><img class="user-profile" src="images/boss.jpg"></a>
+                </div>
+            </div>
+        </header>
+        <nav class="inner-navbar">
+            <div class="menu-categories">
+                <li><a href="#" style="font-weight: bold;"><img src="images/menu-icon.png" alt="">Browse Categories</a>
+                </li>
+            </div>
+            <ul class="inner-navbar-links">
+                <li><a href="user-home.html">Home</a></li>
+                <li><a href="user-about.html">About</a></li>
+                <li><a href="user-faqs.html">FAQs</a></li>
+                <li><a href="user-contact.html">Contact Us</a></li>
+            </ul>
+            <div id="user-filter-search">
+                <li><a href="#"> <img src="images/funnel-green.png" alt="">Search Filter</a></li>
+            </div>
+            <div class="post-item">
+                <li><a href="post-item.html"><img src="images/PostanItem.png" alt=""></a></li>
+            </div>
+        </nav>
+        <div class="coverphotocontainer">
+            <section class="hero">
+                <img src="images/ecoFinds-bg.jpg" alt="EcoFinds-bg" class="hero-image">
+                <div class="hero-overlay"> </div>
+                <div class="hero-content">
+                </div>
+            </section>
+            <div class="profile-info">
+                <div class="profile-pic-container">
+                    <img src="images/boss.jpg" alt="Profile Picture" class="profile-pic">
+                </div>
+                <div class="user-username">
+                    <h2 class="name">Albert Einstein</h2>
+                    <p class="username">@username_sample</p>
+                </div>
+            </div>
+        </div>
+        <div class="header-row">
+            <h1 class="left-text">Your Posts</h1>
+            <a class="right-text" href="user-account-details.html">
+                <p>Account Details</p>
+            </a>
+        </div>
+        <div class="main-item-container">
+            <a href="item-view.html">
+                <div class="item-container">
+                    <div class="item-content">
+                        <div class="item-image">
+                            <img src="images/sofa.jpg" alt="Item Image">
+                        </div>
+                        <div class="item-details">
+                            <div class="top-row">
+                                <h3 class="item-name">Sofa</h3>
+                                <div class="item-actions">
+                                    <img src="images/pencil.png" alt="Edit" class="action-icon">
+                                    <img src="images/delete.png" alt="Delete" class="action-icon">
+                                    <img src="images/dots.png" alt="Options" class="action-icon">
+                                </div>
+                            </div>
+                            <p class="item-location"><img src="images/location-pin.png" alt="location"> Sinunuc,
+                                Zamboanga City
+                            </p>
+                            <p class="item-condition"><b>Condition: </b><span>Used - Fair</span></p>
+                            <p class="item-quantity"><b>Quantity: </b><span>1 (pcs)</span></p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="item-view.html">
+                <div class="item-container">
+                    <div class="item-content">
+                        <div class="item-image">
+                            <img src="images/sofa.jpg" alt="Item Image">
+                        </div>
+                        <div class="item-details">
+                            <div class="top-row">
+                                <h3 class="item-name">Sofa</h3>
+                                <div class="item-actions">
+                                    <img src="images/pencil.png" alt="Edit" class="action-icon">
+                                    <img src="images/delete.png" alt="Delete" class="action-icon">
+                                    <img src="images/dots.png" alt="Options" class="action-icon">
+                                </div>
+                            </div>
+                            <p class="item-location"><img src="images/location-pin.png" alt="location"> Sinunuc,
+                                Zamboanga
+                                City
+                            </p>
+                            <p class="item-condition"><b>Condition: </b><span>Used - Fair</span></p>
+                            <p class="item-quantity"><b>Quantity: </b><span>1 (pcs)</span></p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; Copyright All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

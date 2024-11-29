@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFinds</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="profile-header">
+            <div class="logo-search">
+                <a href="browsing-page.html"><img src="images/ecofinds_logo.png" alt="logo" class="logo-no-title"></a>
+                <div class="searchbar-container">
+                    <input type="text" placeholder="Search" class="searchbar">
+                    <button class="search-icon">
+                        <img src="images/search.png" alt="Search">
+                    </button>
+                </div>
+            </div>
+            <div class="user-options">
+                <div class="icons">
+                    <button type="button" id="like-icon-button" onclick="location.href='user-likes.html';">
+                        <img src="images/heart.png" alt="notif-icon">
+                    </button>
+                    <button type="button" id="notif-icon-button" onclick="location.href='user-notifications.html';">
+                        <img src="images/notif_icon.png" alt="notif-icon">
+                        <span id="notif-icon-button-badge">2</span>
+                    </button>
+                    <a href="profile-personal-account.html"><img class="user-profile" src="images/boss.jpg"></a>
+                </div>
+            </div>
+        </header>
+        <nav class="inner-navbar">
+            <div class="menu-categories">
+                <li><a href="#" style="font-weight: bold;"><img src="images/menu-icon.png" alt="">Browse Categories</a>
+                </li>
+            </div>
+            <ul class="inner-navbar-links">
+                <li><a href="user-home.html">Home</a></li>
+                <li><a href="user-about.html">About</a></li>
+                <li><a href="user-faqs.html">FAQs</a></li>
+                <li><a href="user-contact.html">Contact Us</a></li>
+            </ul>
+            <div id="user-filter-search">
+                <li><a href="#"> <img src="images/funnel-green.png" alt="">Search Filter</a></li>
+            </div>
+            <div class="post-item">
+                <li><a href="post-item.html"><img src="images/PostanItem.png" alt=""></a></li>
+            </div>
+        </nav>
+        <div class="title-container">
+               <h1>Edit Item</h1>
+        </div>
+        <div class="post-item-container">
+            <form class="post-item-form">
+                <!-- First column: Item details -->
+                <div class="post-item-column">
+                    <div class="post-item-form-group">
+                        <label for="item-name">Item Name</label>
+                        <input type="text" id="item-name" name="item-name" required value="Sofa">
+                    </div>
+
+                    <div class="post-item-form-group">
+                        <label for="location">Location</label>
+                        <div class="location-row">
+                            <input type="text" id="location" name="location" placeholder="Street/Building no." required value="Sampaloc Drive">
+                            <input type="text" id="location" name="location" placeholder="Barangay/Purok" required value="Sinunuc">
+                            <input type="text" id="location" name="location" placeholder="City" required value="Zamboanga City">
+                        </div>
+                    </div>
+                    <div class="half-width-row">
+                        <div class="post-item-form-group half-width">
+                            <label for="condition">Condition</label>
+                            <select id="condition" name="condition">
+                                <option value="" disabled>Select Condition</option>
+                                <option value="new">New</option>
+                                <option value="used" selected>Used</option>
+                                <option value="like-new">Like New</option>
+                            </select>
+                        </div>
+
+                        <div class="post-item-form-group half-width">
+                            <label for="tag-categories">Tag/Categories</label>
+                            <select id="tag-categories" name="tag-categories">
+                                <option value="" disabled selected>Select Category</option>
+                                <option value="furniture" selected>Furniture</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="clothing">Clothing</option>
+                                <option value="books">Books</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="half-width-row">
+                        <div class="post-item-form-group half-width">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" id="quantity" name="quantity" min="1" placeholder="Quantity" value="1">
+                        </div>
+
+                        <div class="post-item-form-group half-width">
+                            <label for="unit">Unit</label>
+                            <select id="unit" name="unit">
+                                <option value="" disabled selected>Select Unit</option>
+                                <option value="piece" selected>Piece</option>
+                                <option value="kg">Kg</option>
+                                <option value="box">Box</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="post-item-form-group full-width">
+                        <label for="description">Description</label>
+                        <textarea id="description" name="description" rows="4" placeholder="Description">Kunin niyo na 'to or else itatapon ko to.</textarea>
+                    </div>
+                </div>
+
+                <!-- Second column: Photo upload, contact info, and submit button -->
+                <div class="post-item-column">
+                    <div class="full-width">
+                        <div id="add-photos-container">
+                            <label for="photos" class="label-with-button">Add photos</label>
+                            <button type="button" class="add-image-icon">
+                                <img src="images/add-icon.png" onclick="document.getElementById('file-input').click();" alt="add-icon">
+                            </button>
+                        </div>
+                        <div class="image-container" id="image-container-edit">
+                            <input type="file" id="file-input" multiple accept="image/*" style="display: none;">
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <label id="contact-info-label">Contact Information</label>
+                        <p>(Please select the contact information you would like to use for this post)</p>
+                        <div class="contact-options">
+                            <label><input class="post-item-radio-btn" type="radio" name="contact" value="email">
+                                username_sample@gmail.com</label>
+                            <label><input class="post-item-radio-btn" type="radio" name="contact" value="phone"> +63 935
+                                1234561</label>
+                            <label><input class="post-item-radio-btn" type="radio" name="contact" value="both" checked> Use both
+                                your contact number and email.</label>
+                        </div>
+                    </div>
+                    <div class="post-item-form-group full-width">
+                        <button type="submit" class="post-btn">Update</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; Copyright All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

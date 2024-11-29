@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoFinds</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body id="login-body">
+    <div class="wrapper">
+        <header class="navbar">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/ecoFinds_logo.png" alt="EcoFinds Logo" />
+                    <span class="logo-name">EcoFinds</span>
+                </div>
+                <nav class="main-navbar">
+                    <ul>
+                        <li><a href="landing_page.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="sign-up-btn" onclick="location.href='signup-options.html';">
+                    Sign Up
+                </button>
+            </div>
+        </header>
+
+        <!-- Log In Form -->
+        <div class="login-container">
+            <form id="login-form" class="login-container-inner">
+                <label for="username">Username</label>
+                <input id="username" class="inner-input" type="text" name="username" required />
+
+                <label for="password">Password</label>
+                <input id="password" class="inner-input" type="password" name="password" required />
+            </form>
+            <a href="forgot-password.html" class="forgot-password">
+                <p>Forgot Password?</p>
+            </a>
+            <!-- Button is outside of the login-container-inner -->
+            <button type="submit" id="login-btn" onclick="location.href='browsing-page.html';">Log In</button>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; Copyright All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

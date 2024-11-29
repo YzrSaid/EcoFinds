@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Dashboard</title>
+    <link rel="stylesheet" href="ngo.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <img src="images/ecofinds_logo.png" alt="" style="width: 50px; height: 50px;">
+        <div class="profile">
+            <img src="images/boss.jpg" alt="Admin Icon">
+            <span style="margin-right: 15px; font-weight: bold; font-size: 18px;">Welcome Admin</span>
+        </div>
+    </header>
+
+    <!-- Layout -->
+    <div class="layout">
+       <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>EcoFinds</h2>
+            <nav>
+                <a href="admin-dashboard.html">Dashboard</a>
+                <h4>Accounts</h4>
+                <a style="margin-left: 20px;" href="total-NGO-accounts.html">NGO</a>
+                <a style="margin-left: 20px;" href="#">Users</a>
+                <a style="margin-left: 35px;" href="#">Post</a>
+            </nav>
+            <a href="#" class="exit">Exit</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="verification-section">
+                <h2>Verification</h2>
+                <div class="verification-card">
+                    <div class="profile-pic"></div>
+                    <form>
+                        <label>Organization Name:</label>
+                        <input type="text" value="Sample Name Organization" readonly>
+
+                        <label>Organization Email:</label>
+                        <input type="email" value="sample_account@gmail.com" readonly>
+
+                        <label>Phone Number:</label>
+                        <input type="text" value="+63 935 123 456 1" readonly>
+
+                        <label>Tel. Number:</label>
+                        <input type="text" value="955-1111" readonly>
+
+                        <label>Address:</label>
+                        <input type="text" value="Zamboanga City, Philippines" readonly>
+
+                        <div class="buttons">
+                            <button type="button" class="verify">Verify</button>
+                            <button type="button" class="decline">Decline</button>
+                            <button type="button" class="check-attachment">Check Attachment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

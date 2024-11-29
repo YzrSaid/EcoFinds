@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFinds</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="profile-header">
+            <div class="logo-search">
+                <a href="browsing-page.html"><img src="images/ecofinds_logo.png" alt="logo" class="logo-no-title"></a>
+                <div class="searchbar-container">
+                    <input type="text" placeholder="Search" class="searchbar">
+                    <button class="search-icon">
+                        <img src="images/search.png" alt="Search">
+                    </button>
+                </div>
+            </div>
+            <div class="user-options">
+                <div class="icons">
+                    <button type="button" id="like-icon-button" onclick="location.href='user-likes.html';">
+                        <img src="images/heart.png" alt="notif-icon">
+                    </button>
+                    <button type="button" id="notif-icon-button" onclick="location.href='user-notifications.html';">
+                        <img src="images/notif_icon.png" alt="notif-icon">
+                        <span id="notif-icon-button-badge">2</span>
+                    </button>
+                    <a href="profile-personal-account.html"><img class="user-profile" src="images/boss.jpg"></a>
+                </div>
+            </div>
+        </header>
+        <nav class="inner-navbar">
+            <div class="menu-categories">
+                <li><a href="#" style="font-weight: bold;"><img src="images/menu-icon.png" alt="">Browse Categories</a>
+                </li>
+            </div>
+            <ul class="inner-navbar-links">
+                <li><a href="user-home.html">Home</a></li>
+                <li><a href="user-about.html">About</a></li>
+                <li><a href="user-faqs.html">FAQs</a></li>
+                <li><a href="user-contact.html">Contact Us</a></li>
+            </ul>
+            <div id="user-filter-search">
+                <li><a href="#"> <img src="images/funnel-green.png" alt="">Search Filter</a></li>
+            </div>
+            <div class="post-item">
+                <li><a href="post-item.html"><img src="images/PostanItem.png" alt=""></a></li>
+            </div>
+        </nav>
+        <section class="hero">
+            <img src="images/ecoFinds-bg.jpg" alt="EcoFinds-bg" class="hero-image">
+            <div class="hero-overlay"> </div>
+            <div class="hero-content">
+                <h1>Where Waste Finds Its<br>New <span>Worth</span></h1>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div class="contact-cards">
+                <div class="contact-card-1">
+                    <h3>We're Here</h3>
+                    <p>Our Door Is Always Open</p>
+                </div>
+                <div class="contact-card-2">
+                    <h3>Let's Talk!</h3>
+                    <p>Share Your Excitement With Us</p>
+                    <a href="mailto:said.mohammadaldrin.2021@gmail.com" class="email-link">Send An Email</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; Copyright All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

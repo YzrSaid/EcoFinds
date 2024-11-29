@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>EcoFinds</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="profile-header">
+            <div class="logo-search">
+                <a href="browsing-page.html"><img src="images/ecofinds_logo.png" alt="logo" class="logo-no-title"></a>
+                <div class="searchbar-container">
+                    <input type="text" placeholder="Search" class="searchbar">
+                    <button class="search-icon">
+                        <img src="images/search.png" alt="Search">
+                    </button>
+                </div>
+            </div>
+            <div class="user-options">
+                <div class="icons">
+                    <button type="button" id="like-icon-button" onclick="location.href='ngo-likes.html';">
+                        <img src="images/heart.png" alt="notif-icon">
+                    </button>
+                    <button type="button" id="notif-icon-button" onclick="location.href='ngo-notifications.html';">
+                        <img src="images/notif_icon.png" alt="notif-icon">
+                        <span id="notif-icon-button-badge">2</span>
+                    </button>
+                    <button type="button" id="ngo-icon-button" onclick="location.href='profile-ngo-account.html';">
+                        <img class="user-profile" src="images/angat-buhay-logo.png">
+                        <span id="ngo-icon-button-badge">NGO Partner</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <nav class="inner-navbar">
+            <div class="menu-categories">
+                <li><a href="#" style="font-weight: bold;"><img src="images/menu-icon.png" alt="">Browse Categories</a>
+                </li>
+            </div>
+            <ul class="inner-navbar-links">
+                <li><a href="user-home.html">Home</a></li>
+                <li><a href="user-about.html">About</a></li>
+                <li><a href="user-faqs.html">FAQs</a></li>
+                <li><a href="user-contact.html">Contact Us</a></li>
+            </ul>
+            <div id="ngo-filter-search">
+                <li><a href="#"> <img src="images/funnel-green.png" alt="">Search Filter</a></li>
+            </div>
+        </nav>
+
+        <div class="ngo-coverphotocontainer">
+            <section class="hero">
+                <img src="images/ecoFinds-bg.jpg" alt="EcoFinds-bg" class="hero-image">
+                <div class="hero-overlay"> </div>
+                <div class="hero-content">
+                </div>
+            </section>
+            <div class="account-profile-info">
+                <div class="account-profile-pic-container">
+                    <img src="images/angat-buhay-logo.png" alt="Profile Picture" class="profile-pic">
+                    <span id="ngo-badge">NGO Partner</span>
+                </div>
+            </div>
+            <h4>@angat_buhay</h4>
+        </div>
+        <div class="account-details-container">
+            <div class="outer-container">
+                <div class="account-details-content">
+                    <div id="labels-column">
+                        <h4>Organization Name: </h4>
+                        <h4>Organization Email: </h4>
+                        <h4>Phone Number: </h4>
+                        <h4>Tel. Number: </h4>
+                        <h4>Address: </h4>
+                    </div>
+                    <div id="input-column">
+                        <p id="org-name">Angat Buhay</p>
+                        <p id="org-email">sample_account@gmail.com</p>
+                        <p id="org-phone-number">+63 935 12345 61</p>
+                        <p id="org-tel-number">955 - 1861</p>
+                        <p id="org-address">Sinunuc, Zamboanga City</p>
+                    </div>
+                </div>
+                <div class="bio-container-account-details">
+                    <h4>Your Bio</h4>
+                    <textarea name="ngo-bio" id="ngo-bio-account-details" readonly>"Yung number one ingredient ng leadership aside from character is you show up in the most diffifult times." 🌷</textarea>
+                </div>
+                <div id="edit-row">
+                    <a href="ngo-account-edit.html">
+                        <p>Edit?</p>
+                    </a>
+                </div>
+            </div>
+            <div id="account-deletion-container">
+                <a href="user-account-deletion.html">
+                    <p>Request Account Deletion</p>
+                </a>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; Copyright All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

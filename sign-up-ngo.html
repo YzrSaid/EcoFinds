@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoFinds</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="sign-up-container">
+      <div class="left-section">
+        <a href="landing_page.html" class="home-btn"
+          ><img src="images/home_btn.png"
+        /></a>
+        <img class="signup-eco-logo" src="images/ecofinds_logo.png" />
+        <h1>
+          Welcome To<br /><span class="ecofinds-text-1"
+            >Eco<span class="ecofinds-text-2">Finds</span></span
+          >
+        </h1>
+        <div class="welcome-label">
+          <div class="welcome-label-inner">
+            <p>
+              Discover How Your Unwanted Items Can Find A New Home. Join Our
+              Community And Make A Difference Today!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-section-ngo">
+        <h2>Sign Up</h2>
+        <form id="form-ngo" action="#">
+          <div class="form-group-label">
+            <p>Organization Name</p>
+          </div>
+          <div class="form-group-ngo">
+            <input class="input-long" type="text" required />
+          </div>
+          <div class="form-group-label">
+            <p>Username</p>
+            <p style="margin-left: 28px;">Email</p>
+          </div>
+          <div class="form-group-ngo">
+            <input type="text" required />
+            <input type="text" required />
+          </div>
+          <div class="form-group-label">
+            <p>Tel. Number</p>
+            <p>Phone Number</p>
+          </div>
+          <div class="form-group-ngo">
+            <input type="tel" required />
+            <span class="country-code">+63</span>
+            <input
+              type="tel"
+              id="phone-input"
+              required
+              pattern="\d{10}"
+              maxlength="10"
+              min="1000000000"
+              max="9999999999"
+            />
+          </div>
+          <div class="form-group-label">
+            <p>Password</p>
+          </div>
+          <div class="form-group-ngo">
+            <input class="input-long" type="password" required />
+          </div>
+          <div class="form-group-label">
+            <p>Confirm Password</p>
+          </div>
+          <div class="form-group-ngo">
+            <input class="input-long" type="password" required />
+          </div>
+          <div class="upload-files-container">
+            <p>Note: As part of the registration, submit proof of accreditation to verify your NGO status.</p>
+            <div class="add-files-container">
+                <button id="upload-btn">Add Files</button>
+                <input type="file" id="ngo-file-input" style="display: none;" accept=".jpeg,.png,.pdf,.jpg" multiple>
+                <div id="file-name-box">No file chosen</div>
+                <p id="file-extension">(.jpeg, .jpg, .png, .pdf)</p>
+            </div> 
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" required />
+            <label
+              >I agree to the <a href="#">Privacy Policy</a> and
+              <a href="#">Terms of Service</a>
+            </label>
+          </div>
+          <button class="signup-btn" type="submit">Sign Up</button>
+          <div class="login-link">
+            Already have an account? <a href="log-in.html">Log in</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <!--JS script-->
+  <script src="script.js"></script>
+</html>
