@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account Details</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="admin-body">
+    <!-- Header -->
+    <header class="admin-header">
+        <img src="images/ecofinds_logo.png" alt="" style="width: 50px; height: 50px;">
+        <div class="profile-admin">
+            <img src="images/boss.jpg" alt="Admin Icon">
+            <span style="margin-right: 15px; font-weight: bold; font-size: 18px;">Welcome Admin</span>
+        </div>
+    </header>
+
+    <div class="layout-admin">
+        <!-- Sidebar -->
+        <div class="sidebar-admin">
+            <h2>EcoFinds</h2>
+            <nav>
+                <a href="admin-dashboard.html">Dashboard</a>
+                <h4>Accounts</h4>
+                <a style="margin-left: 20px;" href="total-NGO-accounts.html">NGO</a>
+                <a class="active" style="margin-left: 20px;" href="#">Users</a>
+                <a style="margin-left: 35px;" href="#">Post</a>
+            </nav>
+            <a href="#" class="exit">Exit</a>
+        </div>
+         <!-- Main Content -->
+         <div class="main-content-admin">
+            <div class="verification-section">
+                <h2>Verification</h2>
+                <div class="container-admin">
+                    <div class="profile-section-admin">
+                      <div class="avatar-admin">
+                        <img src="assets/download (1).jpg" alt="">
+                      </div>
+                      <span class="username-admin">@username_sample</span>
+                    </div>
+                  
+                    <form class="user-form-admin">
+                      <div class="form-group-admin">
+                        <label>Organization Name:</label>
+                        <input type="text" value="Sample Org Name" />
+                      </div>
+                      
+                      <div class="form-group-admin">
+                        <label>Organization Email:</label>
+                        <input type="text" value="@sample_email.com"  />
+                      </div>
+                  
+                      <div class="form-group-admin">
+                        <label>Phone Number:</label>
+                        <input type="tel" placeholder="+63 935 123 456 1"  />
+                      </div>
+
+                      <div class="form-group-admin">
+                        <label>Tel. Number:</label>
+                        <input type="tel" placeholder="+63 935 123 456 1"  />
+                      </div>
+                  
+                      <div class="form-group-admin full-width">
+                        <label>Address:</label>
+                        <input type="text" placeholder="Zamboanga City, Philippines"  />
+                      </div>
+                  
+                      <div class="buttons-admin full-width">
+                        <button type="button" class="verify">Check Post</button>
+                        <button type="button" class="decline">Restrict</button>
+                        <button type="button" class="check-attachment">Check Post</button>
+                      </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
